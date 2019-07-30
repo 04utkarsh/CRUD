@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Management
+                    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">-->   
+</head>
+<body>
+  <div class="jumbotron">
+   <form action="" >
+        <div class="row" class="center">
+      <div class="col-md-4">Name</div>
+      <div class="col-md-4">Employee ID</div>
+      <div class="col-md-4">Designation</div>
+    </div>
+   <div class="row">
+      <div class="col-md-4"><input type="text" name="name" id="name" value=""></div>
+      <div class="col-md-4"><input type="text" name="emid" id="emid"></div>
+      <div class="col-md-4"><input type="text" name="de" id="de"></div>
+    </div>
+    
+    <br>
+    <div class="row">
+      <div class="col-md-3"><input type="button" value="Create" onclick="create()"></div>
+      <div class="col-md-3"><input type="button" value="Delete All" onclick="del()"></div>
+      <div class="col-md-3"><input type="button" value="Save Update" onclick="update()"></div>
+      <div class="col-md-3"><input type="button" value="Read" onclick="read()"></div>
+     
+    </div>
+    </form>
+    </div>
+    <br>
+    <br>
+    <table class="table table-striped" id="myTable">
+                        <thead>
+                        
+                        <td>Name</td>
+                        <td>Employee ID</td>
+                        <td>Designation</td>
+                        
+                        </thead>
+                        <tbody id="list">
+                           <!--- <tr>
+                                <td id="displayname"></td>
+                                <td id="displayemid"></td>
+                                <td id="displayde"></td>
+                                <td id="del"></td>
+                            </tr>-->
+                        </tbody>
+</table>
+
+<script src="data.js">
+</script>
+
+</body>
+
+</html>
